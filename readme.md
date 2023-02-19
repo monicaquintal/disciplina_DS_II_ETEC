@@ -18,8 +18,6 @@
 <hr>
 </div>
 
-<hr>
-
 <div id="agenda01" align="center">
 <h2>Agenda 01:</h2>
 </div>
@@ -37,7 +35,7 @@ Em PHP 🐘:
 - a variável é definida de forma dinâmica: uma variável pode conter valores de diferentes tipos em diferentes momentos da execução dos comandos. 
 - variáveis no PHP são identificadas pelo caracter “$” (cifrão).
 - é uma linguagem case-sensitive.
-- umnome de variável válido pode iniciar com uma letra ou underline (sublinhado), seguido de qualquer quantidade de letras, números ou sublinhados.
+- um nome de variável válido pode iniciar com uma letra ou underline (sublinhado), seguido de qualquer quantidade de letras, números ou sublinhados.
 - o separador de casas decimais também é o ponto, assim como em java.
 - para se atribuir valores a uma variável String, utilizam-se aspas simples ou duplas:
   - quando são utilizadas aspas duplas para a construção da string, as variáveis retornam o valor dos seus conteúdos (diferente de quando usamos aspas simples, onde será retornada a string de forma literal -"Olá $nome").
