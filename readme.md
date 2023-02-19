@@ -9,7 +9,7 @@
 
 ## Conteúdo
      
-<a href="#agenda01">Agenda 01: </a><br>
+<a href="#agenda01">Agenda 01: Introdução a Server-Side.</a><br>
 <a href="#agenda02">Agenda 02: Variáveis e métodos GET e POST.</a><br>
 <a href="#agenda03">Agenda 03: </a><br>
 <a href="#agenda04">Agenda 04: </a><br>
@@ -19,8 +19,47 @@
 </div>
 
 <div id="agenda01" align="center">
-<h2>Agenda 01:</h2>
+<h2>Agenda 01: Introdução a Server-Side.</h2>
 </div>
+
+### Introdução:
+
+`PHP`: Hypertext Preprocessor – Pré processador de hipertexto!
+
+Quando o usuário digita o endereço de um site no navegador do computador e pressiona a tecla “Enter”, ele faz uma solicitação, que
+chamamos de ***requisição para o servidor*** (do outro computador). Esse servidor, por sua vez, processa essa requisição, consulta o seu banco de dados e devolve uma resposta para o seu navegador. Esse código que é executado do lado do servidor utiliza linguagens, como: Perl, Ruby, Python, PHP, Java e C#!
+
+`Servidores Web`: há diversas opções no mercado de pacotes de softwares que já instalam e configuram o servidor web, a linguagem PHP e banco de dados, como: XAMP, WAMP, EasyPHP, AppServ e Zwamp.
+
+### Criando o primeiro arquivo PHP:
+
+> arquivo `ola-mundo.php`
+
+Importante: 
+- nunca utilizar caracteres especias e espaços em branco para nomear arquivos.
+- delimitadores PHP:
+
+~~~php
+<?php
+  echo "Olá Mundo";
+?>
+~~~
+
+- comentários:
+
+~~~php
+<?php
+//Comentário.
+?>
+
+<?php
+/*
+ Comentário em Bloco
+ */
+?>
+~~~
+
+> A atividade para nota da semana foi um Simulado, que encontra-se no arquivo `simulado.md`!
 
 <hr>
 
@@ -78,6 +117,8 @@ a. Neste arquivo, crie um formulário com os campos:
 2. Crie um arquivo PHP para receber a ação do botão enviar.<br>
 a. Este deverá exibir no navegador uma informação em cada linha.<br>
 b. Utilize o método que você achar melhor.
+
+> O `Fichário` desenvolvido para nota nesta Agenda encontra-se no diretório `fichario_agenda02`!
 
 <hr>
 
