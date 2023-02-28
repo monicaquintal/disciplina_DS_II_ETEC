@@ -11,11 +11,16 @@
      
 <a href="#agenda01">Agenda 01: Introdução a Server-Side.</a><br>
 <a href="#agenda02">Agenda 02: Variáveis e métodos GET e POST.</a><br>
-<a href="#agenda03">Agenda 03: </a><br>
+<a href="#agenda03">Agenda 03: Estrutura de decisão e Operadores gerais.</a><br>
 <a href="#agenda04">Agenda 04: </a><br>
 <a href="#agenda05">Agenda 05: </a><br>
 <br>
-<hr>
+
+## Mais PHP:
+<a href="https://github.com/monicaquintal/estudandoPHP">estudandoPHP</a><br>
+<a href="https://github.com/monicaquintal/app-help-desk">app-help-desk</a><br>
+<a href="https://github.com/monicaquintal/estudandoPHP-orientacao-a-objetos">estudandoPHP-orientacao-a-objetos</a><br>
+<a href="https://github.com/monicaquintal/app-send-mail">app-send-mail</a><br>
 </div>
 
 <div id="agenda01" align="center">
@@ -183,3 +188,41 @@ if(expressao) {
 ~~~
 
 > arquivos `desvioSimples.php` e `desvioSimplesAction.php`
+
+### B) Desvio composto:
+
+~~~php
+if(expressao) {
+ [instrucoes]; // Se verdadeiro
+} else {
+ [instrucoes]; // Se falso
+} 
+~~~
+
+> arquivos `desvioComposto.php` e `desvioCompostoAction.php`
+
+### Encadeamento de decisões
+
+No php existe o comando ***elseif***, utilizado para quando o encadeamento de condições fica em uma cascata contínua; em uma codificação longa, seu uso pode deixar seu código mais limpo, diminuindo o número de chaves. 
+
+> arquivos `desvioComposto.php` e `desvioCompostoAction.php`
+
+### Switch
+
+~~~php
+switch($op) {
+  case 1:
+    echo "A";
+    break;
+  case 2:
+    echo "B";
+    break;
+  default:
+    echo "Erro";
+}
+
+/* o "break" deve estar em todas as opções, menos na última! */
+~~~
+
+### Operador ternário
+
