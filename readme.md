@@ -123,5 +123,63 @@ b. Utilize o método que você achar melhor.
 <hr>
 
 <div id="agenda03" align="center">
-<h2>Agenda 03:</h2>
+<h2>Agenda 03: PHP - Estrutura de decisão e Operadores gerais.</h2>
 </div>
+
+### Operadores:
+
+***A) Aritméticos:***
+
+OPERADOR | REPRESENTAÇÃO  
+:-----: | :----------: 
+Adição | + 
+Subtração | - 
+Multiplicação | * 
+Divisão | / 
+Módulo | % 
+
+***B) De atribuição:***
+
+OPERADOR | RERESENTAÇÃO 
+:------: | :----------: 
+Atribuição simples | =
+Com adição | +=
+Com subtração | -=
+Com multiplicação | *= 
+Com divisão | /=
+Com módulo | %=
+Concatenação | .=
+
+***C) Relacionais:***
+
+| OPERADOR     | REPRESENTAÇÃO |
+| ------------ | :-----------: |
+| Igual a      |      ==       | 
+| Idêntico     |      ===      | 
+| Diferente    |      !=       | 
+| Diferente    |   &lt;&gt;    | 
+| Menor        |     &lt;      |
+| Maior        |     &gt;      | 
+| Menor igual  |     &lt;=     | 
+| Maior igual  |     &gt;=     | 
+
+***D) Lógicos:***
+
+| OPERADOR |   REPRESENTAÇÃO    | 
+| :------: | :----------------: |
+|    E     |     AND ou &&      |
+|    OU    | OR ou &#124;&#124; | 
+|   Ou exclusivo    |        XOR         | 
+| Negação (inversão)  |         !          | 
+
+### Desvios condicionais:
+
+### A) Desvio condicional simples:
+
+~~~php
+if(expressao) {
+  [instrucoes];
+}
+~~~
+
+> arquivos `desvioSimples.php` e `desvioSimplesAction.php`
