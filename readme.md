@@ -226,3 +226,15 @@ switch($op) {
 
 ### Operador ternário
 
+Utilizado quando as condições são tão simples que só há duas possibilidades, uma para verdadeiro e outra para falso.
+
+~~~php
+$variavel valor ? "retorno caso true" : "retorno caso false";
+~~~
+
+Inicialmente definimos um teste qualquer, retornando um valor booleano, depois, determinamos o primeiro parâmetro após o ponto de interrogação (valor que deverá ser retornado **caso o teste seja verdadeiro** - retorno booleano “true”) e o segundo parâmetro,
+após os dois pontos (que será retornado **caso seja falso** - retorno booleano “false”). 
+
+### Concluindo
+
+> arquivos `voceNoComando.php` e `vcNoComandoAction.php`
