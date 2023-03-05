@@ -47,4 +47,4 @@ Importante:
 
 > A atividade para nota da semana foi um Simulado, que encontra-se no arquivo `simulado.md`!
 
-[Voltar ao início.](https://github.com/monicaquintal)
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)

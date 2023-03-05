@@ -61,4 +61,4 @@ b. Utilize o método que você achar melhor.
 
 > O `Fichário` desenvolvido para nota nesta Agenda encontra-se no diretório `fichario_agenda02`!
 
-[Voltar ao início.](https://github.com/monicaquintal)
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
