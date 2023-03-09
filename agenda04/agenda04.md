@@ -96,3 +96,115 @@ Exemplo:
 ### 4. `FOREACH`
 
 - desenvolvido para gerar iterações para o uso em arrays e objetos no PHP!
+
+> Obs.: Comando break tem a função de parar a execução de laços de repetição.
+
+Exemplo de aplicação do comando break:
+
+~~~php
+$i = 0;
+
+while (true) { //Loop infinito.
+ if ($i > 10) {
+  break;
+ }
+ echo $i."<br>";
+ $i++;
+}
+~~~
+
+> Obs.: Comando continue tem a função de pular a iteração na qual foi executado, passando para a próxima iteração do laço, continuando assim o loop.
+
+Exemplo de aplicação do comando continue:
+
+~~~php
+$i = 0;
+
+for($i = 0; $i <=10; $i++) {
+ if ($i == 5) {
+  continue;
+ }
+ echo $i."<br>";
+}
+~~~
+
+---
+
+### Você no comando:
+
+Utilizando o que foi visto até agora, vamos criar uma página completa para mãe de Karla.<br>
+
+1. Crie um arquivo PHP na pasta root ou Agenda4.<br>
+
+a) Crie uma divisão e coloque a data atual centralizada na Página.<br>
+b) Divida a página em três:
+
+- Parte 1: Clicar em um botão para gerar a Tabuada respectiva ao número do botão;
+- Parte 2: Digitar o valor e clicar para gerar a tabuada do valor digitado;
+- Parte 3: Clicar em um botão para gerar todas as tabuadas;
+
+2- Crie um arquivo PHP para receber todas as ações possíves do arquivo anterior e exibir as tabuadas requeridas.<br>
+Dicas:<br>
+- Procure pela função nativa date().
+- Utilize o exemplo de cada estrutura de repetição
+- Utilize o comando isset para verificar qual botão foi acionado.
+
+> arquivos `voceNoComando.php` e `voceNoComandoAction.php`
+
+---
+
+## Simulado
+
+### Questao 01:
+
+Dada a função a seguir:
+
+![Exercício 1](./imgs/ex1.png)
+
+Como seria a chamada desta função para um retorno de valor 10?
+
+> exercicio(20,10)
+
+### Questao 02:
+
+Karla deseja criar uma página que exiba todos os números ímpares de 1 a 100. Qual das alternativas demonstra uma possível resolução.
+
+~~~php
+$i = 1; 
+while ($i <= 99) { 
+  echo $i."<br>"; 
+  $i++; 
+  $i++;
+}
+~~~
+
+### Questao 03
+
+Dada a função a seguir:
+
+![Exercício 3](./imgs/ex3.png)
+
+Qual o valor de retorno caso a chamada da função seja exercício(0):
+
+> Esse Número é:
+
+### Questao 04
+
+Qual das estruturas de repetição tem como característica a execução da primeira iteração independende de sua condição.
+
+> Do-While
+
+### Questao 05
+
+Dada a função a seguir:
+
+![Exercício 5](./imgs/ex5.png)
+
+Qual o valor de retorno caso a chamada da função seja exercício( -10 ):
+
+> Negativo
+
+
+
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)

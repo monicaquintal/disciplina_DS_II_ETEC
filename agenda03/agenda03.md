@@ -114,7 +114,7 @@ após os dois pontos (que será retornado **caso seja falso** - retorno booleano
 
 ### Concluindo
 
-> arquivos `voceNoComando.php` e `vcNoComandoAction.php`
+> arquivos `voceNoComando.php` e `voceNoComandoAction.php`
 
 > O `Fichário` desenvolvido para nota nesta Agenda encontra-se no diretório `fichario_agenda03`!
 
