@@ -143,7 +143,7 @@ b) Divida a página em três:
 - Parte 2: Digitar o valor e clicar para gerar a tabuada do valor digitado;
 - Parte 3: Clicar em um botão para gerar todas as tabuadas;
 
-2- Crie um arquivo PHP para receber todas as ações possíves do arquivo anterior e exibir as tabuadas requeridas.<br>
+2. Crie um arquivo PHP para receber todas as ações possíves do arquivo anterior e exibir as tabuadas requeridas.<br>
 Dicas:<br>
 - Procure pela função nativa date().
 - Utilize o exemplo de cada estrutura de repetição
