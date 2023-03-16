@@ -147,6 +147,7 @@ A partir de um array populado com todos os estados do país, criar um combobox q
 > script `exemploForeachArray.php`
 
 - é a estrutura mais comum para a iteração de arrays!
+- aplicando no mesmo exemplo acima:
 
 ~~~php
 <select class="w3-input w3-border w3-light-grey" name = "cmbEstados">
@@ -159,3 +160,156 @@ A partir de um array populado com todos os estados do país, criar um combobox q
 ?>
 </select>
 ~~~
+
+--- 
+
+## Funções para Arrays
+
+Vídeos [1](https://www.youtube.com/embed/ys5KjCdvSAg?feature=oembed), [2](https://www.youtube.com/embed/O5mKRNvoWbE?feature=oembed), [3](https://www.youtube.com/embed/4XcUwfCpshg?feature=oembed) e [4](https://www.youtube.com/embed/Zz-5WjcP8_g?feature=oembed).
+
+- is_array ($array) = verifica se determinada variavel é um array.
+- in_array ($valor, $array) = verifica se um valor existe em um determinado array.
+- array_keys($array) = retorna um novo array com as chavesdo array passado.
+- array_values($array) = retorna um novo array com os valores do array passado.
+- array_merge ($array1, $array2) = agrega os conteudos de dois arrays.
+- array_pop ($array) = exclui a última posição do array.
+- array_shift($array) = exclui a primeira posição do array.
+- array_unshift($array, "valor") = adiciona um ou mais elementos no inicio do array.
+- array_push($array, $valor, "valor") = adiciona um ou mais elementos no fim do array.
+- array_combine($keys,$values) = mescla os dois arrays em chaves e valores.
+- array_sum() = calcula a soma dos elementos do array.
+- explode("/","20/01/2001") = transforma uma string em um array.
+- implode ("-", $array) = transforma um array em uma string,
+
+---
+
+## Arrays multidimensionais
+
+- trata-se de um Array que tem vinculado um outro Array para cada uma de suas posições.
+- é uma array dentro de outro array!
+- O PHP permite construir estruturas com quantas dimensões forem necessárias, porém o desenvolvimento será por meio de estruturas que tenham até 2 dimensões (formato de tabelas ou planilhas).
+
+### Exemplo:
+
+~~~php
+$produtos = array(
+  array("Processador","900"),
+  array("Mouse","15"),
+  array("Teclado","20"),
+  array("Impressora","500"),
+  array("Monitor","450"),
+  array("Placa de Vídeo","1500"),
+  array("Memória RAM 8G","500"),
+  array("Placa Mãe","600"),
+  array("Mouse Pad","25"),
+  array("SSD","245")
+);
+
+echo '<pre>';
+print_r($produtos);
+echo '</pre>';
+~~~
+
+Como resultado, obtemos:
+
+~~~
+Array
+(
+  [0] => Array
+      (
+        [0] => Processador
+        [1] => 900
+      )
+
+  [1] => Array
+      (
+        [0] => Mouse
+        [1] => 15
+    )
+
+  [2] => Array
+      (
+        [0] => Teclado
+        [1] => 20
+      )
+
+  [3] => Array
+      (
+        [0] => Impressora
+        [1] => 500
+      )
+
+  [4] => Array
+      (
+        [0] => Monitor
+        [1] => 450
+      )
+
+  [5] => Array
+      (
+        [0] => Placa de Vídeo
+        [1] => 1500
+      )
+
+  [6] => Array
+      (
+        [0] => Memória RAM 8G
+        [1] => 500
+      )
+
+  [7] => Array
+      (
+        [0] => Placa Mãe
+        [1] => 600
+      )
+
+  [8] => Array
+      (
+        [0] => Mouse Pad
+        [1] => 25
+      )
+
+  [9] => Array
+      (
+        [0] => SSD
+        [1] => 245
+      )
+)
+~~~
+
+### Acessando os valores:
+
+Para acessar os valores do array bidimensional, utilizar seu nome seguido dos índices entre colchetes, como a seguir:
+
+~~~php
+echo $produtos[0][0];
+~~~
+
+### Importante:
+
+- uma alternativa para a declaração, é colocar as “colunas” com índices associativos (strings) fazendo referência a seu conteúdo. 
+
+Exemplo:
+
+~~~php
+$produtosAssociativo = array(
+ array("nome"=> "Processador","valor"=> "900" ),
+ array("nome"=> "Mouse","valor"=> "15" ),
+ array("nome"=> "Teclado","valor"=> "20" ),
+ array("nome"=> "Impressora","valor"=> "500" ),
+ array("nome"=> "Monitor","valor"=> "450" ),
+ array("nome"=> "Placa de Vídeo","valor"=> "1500" ),
+ array("nome"=> "Memória RAM 8G","valor"=> "500" ),
+ array("nome"=> "Placa Mãe","valor"=> "600" ),
+ array("nome"=> "Mouse Pad","valor"=> "25" ),
+ array("nome"=> "SSD","valor"=> "245" )
+ );
+
+echo $produtosAssociativo[0]['nome'];
+~~~
+
+---
+
+## Iteração em Array Bidimensional
+
+página 14

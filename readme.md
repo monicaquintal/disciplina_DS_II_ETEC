@@ -13,7 +13,7 @@
 [Agenda 02: Variáveis e métodos GET e POST.](./agenda02/agenda02.md)<br>
 [Agenda 03: Estrutura de decisão e Operadores gerais.](./agenda03/agenda03.md)<br>
 [Agenda 04: Estruturas de Repetição e Funções.](./agenda04/agenda04.md)<br>
-[Agenda 05: PHP - Arrays.](./agenda05/agenda05.md)<br>
+[Agenda 05: Arrays.](./agenda05/agenda05.md)<br>
 <br>
 
 ## Mais PHP:
