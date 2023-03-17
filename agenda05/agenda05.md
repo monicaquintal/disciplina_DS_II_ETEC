@@ -312,4 +312,93 @@ echo $produtosAssociativo[0]['nome'];
 
 ## Iteração em Array Bidimensional
 
-página 14
+- o array bidimensional pode ser tratado como uma matriz, permitindo assim o uso de estruturas de repetição de diversas formas. 
+- o mais comum é utilizar a estrutura foreach.
+
+> arquivo `iteracaoArrayMultidimensional.php`
+
+Exemplo 1:
+
+~~~php
+$produtos = array(
+  array("Processador","900"),
+  array("Mouse","15"),
+  array("Teclado","20"),
+  array("Impressora","500"),
+  array("Monitor","450"),
+  array("Placa de Vídeo","1500"),
+  array("Memória RAM 8G","500"),
+  array("Placa Mãe","600"),
+  array("Mouse Pad","25"),
+  array("SSD","245")
+);
+
+echo '<table class="w3-table-all w3-hoverable w3-text-black">';
+echo '<tr class="w3-grey">';
+echo '<th class="w3-center">Nome</th>';
+echo '<th class="w3-center">Valor</th>';
+echo '</tr>';
+
+foreach($produtos as $produto) {
+  echo '<tr>';
+  /* Para cada iteração, transforma o array bidimensional ($produtos) em um array unidimensional ($produto) */
+  foreach($produto as $item) {
+    echo '<td class="w3-center">'.$item.'</td>';
+    /* transforma o array unidimensiona ($produto) em uma variável */
+  }
+  echo '</tr>';
+}
+echo '</table>';
+~~~
+
+Exemplo 2:
+
+~~~php
+$produtosAssociativo = array(
+  array("nome"=> "Processador","valor"=> "900" ),
+  array("nome"=> "Mouse","valor"=> "15" ),
+  array("nome"=> "Teclado","valor"=> "20" ),
+  array("nome"=> "Impressora","valor"=> "500" ),
+  array("nome"=> "Monitor","valor"=> "450" ),
+  array("nome"=> "Placa de Vídeo","valor"=> "1500" ),
+  array("nome"=> "Memória RAM 8G","valor"=> "500" ),
+  array("nome"=> "Placa Mãe","valor"=> "600" ),
+  array("nome"=> "Mouse Pad","valor"=> "25" ),
+  array("nome"=> "SSD","valor"=> "245" ),
+  );
+
+echo '<table class="w3-table-all w3-hoverable w3-text-black">';
+echo '<tr class="w3-teal ">';
+echo '<th class="w3-center"> Nome</th>';
+echo '<th class="w3-center"> Valor</th>';
+echo '</tr>';
+
+ foreach ($produtosAssociativo as $produto) {
+ echo '<tr>';
+ echo '<td class="w3-center">'.$produto['nome'].'</td>';
+ echo '<td class="w3-center">'.$produto['valor'].'</td>';
+ echo '</tr>';
+
+ }
+ echo '</table>';
+~~~
+
+--- 
+
+## Você no comando:
+
+Joseph, recebeu de seu professor o desafio de criar uma tabela por meio de um array  multidimensional, populado com todos os nomes e siglas dos estados brasileiros, inclusive o Distrito Federal. Essa tabela será exibida em um site de uma escola municipal de ensino fundamental. 
+
+Utilizando o que foi visto até agora, crie a página solicitada:
+
+1. Crie um arquivo PHP na pasta root ou Agenda5.
+2. Crie uma tabela utilizando uma estrutura de repetição.
+
+Dicas:
+
+- Utilize a Estrutura de Repetição Foreach
+- Os índices são: “estado” e “sigla”.
+
+> script `voceNoComando.php`
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
