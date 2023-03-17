@@ -401,4 +401,31 @@ Dicas:
 
 > script `voceNoComando.php`
 
+--- 
+
+## Atividade proposta:
+
+A Diretora da escola ficou encantada com o resultado do trabalho de Joseph e pediu para ele desenvolver uma página para exibir as notas do oitano ano A.
+
+Joseph ficou muito feliz e conversou com a equipe de banco de dados da rede municipal referente as informações e dados da turma. Por sorte, a equipe de banco de dados lhe enviu um array bidimensional com os dados para a realização do trabalho.
+
+Utilizando o que foi visto até agora, crie a página solicitada, com o seguinte vetor:
+
+~~~php
+$alunos = array(
+  array("nome"=> "Aline","primeiroSemestre"=> 10, "segundoSemestre"=> 9.5),
+  array("nome"=> "Alfredo","primeiroSemestre"=> 8, "segundoSemestre"=> 5),
+  array("nome"=> "Carla","primeiroSemestre"=> 5, "segundoSemestre"=> 6.5),
+  array("nome"=> "César","primeiroSemestre"=> 9, "segundoSemestre"=> 9),
+  array("nome"=> "Daniel","primeiroSemestre"=> 10, "segundoSemestre"=> 7),
+  array("nome"=> "Esnar","primeiroSemestre"=> 8, "segundoSemestre"=> 6),
+  array("nome"=> "Henzo","primeiroSemestre"=> 6, "segundoSemestre"=> 8),
+  array("nome"=> "Pablo","primeiroSemestre"=> 7, "segundoSemestre"=> 5),
+  array("nome"=> "Wallace","primeiroSemestre"=> 8, "segundoSemestre"=> 7),
+  array("nome"=> "Zulmira","primeiroSemestre"=> 10, "segundoSemestre"=> 6)
+);
+~~~
+
+> Resolução da atividade em ficharop agenda_05 > fichario_agenda05.php
+
 [Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
