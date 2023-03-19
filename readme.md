@@ -14,6 +14,7 @@
 [Agenda 03: Estrutura de decisão e Operadores gerais.](./agenda03/agenda03.md)<br>
 [Agenda 04: Estruturas de Repetição e Funções.](./agenda04/agenda04.md)<br>
 [Agenda 05: Arrays.](./agenda05/agenda05.md)<br>
+[Agenda 06: Persistência de dados (parte 1) - MySQLi.](./agenda06/agenda06.md)<br>
 <br>
 
 ## Mais PHP:
