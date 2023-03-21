@@ -423,3 +423,41 @@ INSERT INTO `pwii`.`jogo` (`nome`, `fabricante`) VALUES ('CS: GO', 'Valve');
 
 ## Envio de Atividade
 
+"Inês, professora de Inglês, ficou sabendo que Gabriela estudava programação, ficou interessada e pediu para ela desenvolver uma página para exibir as notas de cada um dos 4 módulos de inglês, de cada aluno concluinte da escola, oferecendo para Gabriela desconto em sua mensalidade. 
+
+Gabriela ficou muito interessada e começou a buscar informações para desenvolver o projeto. Por sorte a escola, possui um banco de dados, que contém uma tabela, com o código do aluno, seu nome e as notas dos quatros módulos de cada um dos alunos concluintes.
+
+Utilizando o que foi visto até agora, vamos criar a página solicitada."
+
+### Criando a tabela "aluno concluinte"
+
+~~~sql
+CREATE TABLE `pwii`.`alunoconcluinte` (
+ `idalunoconcluinte` INT(11) NOT NULL AUTO_INCREMENT,
+ `nome` VARCHAR(45) NOT NULL,
+ `nota1` FLOAT NOT NULL,
+ `nota2` FLOAT NOT NULL,
+ `nota3` FLOAT NOT NULL,
+ `nota4` FLOAT NOT NULL,
+ PRIMARY KEY (`idalunoconcluinte`)
+);
+~~~
+
+### Inserindo registros de alunos
+
+~~~sql
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Eduarda', '10', '10', '9', '10');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Paulo', '10', '9', '8', '9');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Igo', '10', '8', '10', '10');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Guilherm', '10', '9', '8', '7');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Henrique', '9', '9', '8', '7');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Nilson', '10', '9', '10', '9');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Ana', '9', '9', '8', '8');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Amanda', '8', '9', '9', '8');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Carlos', '6', '6', '5', '6');
+INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Pedro', '8', '8', '8', '7');
+~~~
+
+> Pendente resolução da atividade da semana
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
