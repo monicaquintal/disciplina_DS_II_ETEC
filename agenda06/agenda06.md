@@ -18,6 +18,10 @@
 
 > As funções MySQLi funcionam apenas com PHP 5 (ou superior) e MySQL 4.1.3 (ou superior).
 
+## Objetido do projeto a ser desenvolvido:
+
+"Criar um projeto para salvar o nome, apelido e e-mail de seus amigos, podendo ter assim um sistema exclusivo para gerenciar seus amigos."
+
 ## Criando o Banco de Dados
 
 No `phpMyAdmin`:
@@ -198,7 +202,7 @@ echo '
 ';
 
 $sql = "SELECT * FROM amigo" ;
-// a setença select retorna uma matriz de dados (array), ou seja, o resultado deve ser atribuído a uma variável ($resultado)
+// a sentença select retorna uma matriz de dados (array), ou seja, o resultado deve ser atribuído a uma variável ($resultado)
 $resultado = $conexao->query($sql);
 
 if($resultado != null)
@@ -226,6 +230,160 @@ $conexao->close();
 </div>
 ~~~
 
-## Criação dos arquivos: `excluir` e `excluir` (action)
+## Criação dos arquivos: `excluir` e `excluir action`
 
-PÁGINA 13
+> arquivo `excluir.php`
+
+Composto por:
+
+- formulário com os campos (todos desabilitados): 
+  - nome;
+  - apelido;
+  - email.
+- botão para confirmar a exclusão.
+- link para cancelar a exclusão.
+
+~~~php
+<a href="index.php" class="w3-display-topmiddle w3-red w3-center w3-padding w3-button w3-margin-top w3-round-large" style="text-decoration:none;">
+  <i class="fa fa-ban" style="font-size:5em"></i>
+  <p style="font-weight:bold;">CANCELAR EXCLUSÃO</p>
+</a>
+
+<div class="w3-padding w3-content w3-text-grey w3-third w3-margin w3-display-middle">
+  <h1 class="w3-center w3-pink w3-round-large w3-margin">EXCLUIR - ID: <?php echo " ".$_GET['id']?> </h1>
+  <form action="excluirAction.php" class="w3-container w" method='post'>
+    <input name="txtID" class="w3-input w3-grey w3-border" type="hidden" value="<?php echo $_GET['id']?>">
+    <br>
+    <label class="w3-text-deep-purple" style="font-weight: bold;">Nome</label>
+    <input name="txtNome" class="w3-input w3-border w3-grey" disabled value="<?php echo $_GET['nome']?>">
+    <br>
+    <label class="w3-text-deep-purple" style="font-weight: bold;">Apelido</label>
+    <input name="txtApelido" class="w3-input w3-border w3-grey" disabled value="<?php echo $_GET['apelido']?>">
+    <br>
+    <label class="w3-text-deep-purple" style="font-weight: bold;">Email</label>
+    <input name="txtEmail" class="w3-input w3-border w3-grey" disabled value="<?php echo $_GET['email']?>">
+    <br>
+    <button name="btnExcluir" class="w3-button w3-deep-purple w3-cell w3-round-large w3-right">
+    <i class="w3-xxlarge fa fa-check"></i> Confirmar Exclusão.
+    </button>
+  </form>
+</div>
+~~~
+
+e 
+
+> arquivo `excluirAction.php`
+
+- Criar instância MySQLi.
+- Verificar conexão.
+- Criar sentença DELETE.
+- Executar a sentença, verificando se mesma obteve sucessso.
+- Gerar mensagens de sucesso e falha, com link para o arquivo listar.php.
+- Fechar a conexão.
+
+~~~php
+$servername = "localhost";
+$username = "root";
+$password = "senha";
+$dbname = "pwii";
+$conexao = new mysqli($servername, $username, $password, $dbname);
+
+if ($conexao->connect_error) {
+  die("Connection failed: " . $conexao->connect_error);
+}
+
+$sql = "DELETE FROM amigo WHERE idamigo = '".$_POST['txtID'] ."';";
+
+if ($conexao->query($sql) === TRUE) {
+  echo '
+  <a href="listar.php">
+  <h1 class="w3-button w3-pink">Amigo Excluido com sucesso! </h1>
+  </a>
+  ';
+} else {
+  echo '
+  <a href="listar.php">
+  <h1 class="w3-button w3-pink">ERRO! </h1>
+  </a>
+  ';
+}
+
+$conexao->close();
+~~~
+
+## Criação dos arquivos: `atualizar` e `atualizar action`
+
+> arquivo `atualizar.php`
+
+Deve possuir um formulário com os campos (inputs): 
+
+- nome;
+- apelido;
+- email.
+
+Receberá os dados da url através do método get (do arquivo listar.php),para que o usuário possa realizar alterações nos dados (update).
+
+~~~php
+<...>
+<h1 class="w3-center w3-pink w3-round-large w3-margin">Atualizar - ID: <?php echo " ".$_GET['id']?> </h1>
+<form action="atualizarAction.php" class="w3-container" method='post'>
+  <input name="txtID" class="w3-input w3-grey w3-border" type="hidden" value="<?php echo $_GET['id']?>">
+  <br>
+  <label class="w3-text-deep-purple" style="font-weight: bold;">Nome</label>
+  <input name="txtNome" class="w3-input w3-light-grey w3-border" value="<?php echo $_GET['nome']?>">
+  <br>
+  <label class="w3-text-deep-purple" style="font-weight: bold;">Apelido</label>
+  <input name="txtApelido" class="w3-input w3-light-grey w3-border" value="<?php echo $_GET['apelido']?>">
+  <br>
+  <label class="w3-text-deep-purple" style="font-weight: bold;">Email</label>
+  <input name="txtEmail" class="w3-input w3-light-grey w3-border" value="<?php echo $_GET['email']?>">
+  <br>
+  <button name="btnAtualizar" class="w3-button w3-deep-purple w3-cell w3-round-large w3-right">
+  <i class="w3-large fa fa-spinner"></i> Atualizar
+  </button>
+</form>
+<...>
+~~~
+
+e
+
+> arquivo `atualizarAction.php`
+
+- Criar instância MySQLi.
+- Verificar conexão.
+- Criar sentença Update.
+- Executar a sentença verificando se mesma obteve sucessso.
+- Gerar mensagems de sucesso e falha com link para o arquivo listar.php.
+- Fechar conexão.
+
+~~~php
+$servername = "localhost";
+$username = "root";
+$password = "senha";
+$dbname = "pwii";
+$conexao = new mysqli($servername, $username, $password, $dbname);
+
+if ($conexao->connect_error) {
+  die("Connection failed: " . $conexao->connect_error);
+}
+
+$sql = "UPDATE amigo SET nome = '".$_POST['txtNome']."', apelido = '".$_POST['txtApelido']."', email='".$_POST['txtEmail']."' WHERE idamigo =". $_POST['txtID'].";";
+
+if ($conexao->query($sql) === TRUE) {
+  echo '
+  <a href="listar.php">
+  <h1 class="w3-button w3-pink">Amigo Atualizado com sucesso!</h1>
+  </a>
+  ';
+  $id = mysqli_insert_id($conexao);
+
+} else {
+  echo '
+  <a href="listar.php">
+  <h1 class="w3-button w3-teal">ERRO! </h1>
+  </a>
+  ';
+}
+
+$conexao->close();
+~~~
