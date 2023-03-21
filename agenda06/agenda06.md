@@ -387,3 +387,39 @@ if ($conexao->query($sql) === TRUE) {
 
 $conexao->close();
 ~~~
+
+---
+
+## Você no comando
+
+"Utilizando o que foi visto até agora, foi criada uma tabela no banco de dados com o nome: jogos, com os atributos idjogo (auto incremento), nome e fabricante.
+
+1. Obtenha os dados da tabela, utilizando o driver Mysqli
+2. Crie uma tabela utilizando os dados obtidos através da consulta ao banco de dados e exiba no navegador."
+
+### Criando a tabela jogo:
+
+~~~sql
+CREATE TABLE `pwii`.`jogo` (
+ `idjogo` INT NOT NULL AUTO_INCREMENT,
+ `nome` VARCHAR(45) NOT NULL,
+ `fabricante` VARCHAR(45) NOT NULL,
+ PRIMARY KEY (`idjogo`)
+);
+~~~
+
+### Inserindo registros:
+
+~~~sql
+INSERT INTO `pwii`.`jogo` (`nome`, `fabricante`) VALUES ('FIFA 2020', 'EA');
+INSERT INTO `pwii`.`jogo` (`nome`, `fabricante`) VALUES ('FINAL FANTASY', 'Square Enix');
+INSERT INTO `pwii`.`jogo` (`nome`, `fabricante`) VALUES ('GTA', 'Rockstar Games');
+INSERT INTO `pwii`.`jogo` (`nome`, `fabricante`) VALUES ('CS: GO', 'Valve');
+~~~
+
+[Código aqui!](./voce-no-comando/voceNoComando.php)
+
+--- 
+
+## Envio de Atividade
+
