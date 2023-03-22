@@ -9,7 +9,7 @@
   <title>Tabela Alunos - MYSQLI</title>
 </head>
 <body>
-  <div class="w3-padding w3-content w3-half w3-display-topmiddle w3-margin">
+  <div class="w3-padding w3-content w3-half w3-display-middle w3-margin">
     <h1 class="w3-center w3-indigo w3-round-large">Alunos Concluintes</h1>
     <table class="w3-table-all w3-centered w3-text-black">
       <thead>

@@ -458,6 +458,8 @@ INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`
 INSERT INTO `pwii`.`alunoconcluinte` (`nome`, `nota1`, `nota2`, `nota3`, `nota4`) VALUES ('Pedro', '8', '8', '8', '7');
 ~~~
 
-> Pendente resolução da atividade da semana
+> Resolução da atividade proposta [aqui](./tabela-alunos/aluno-concluinte.php)
+
+---
 
 [Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
