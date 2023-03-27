@@ -43,6 +43,8 @@ Em outros servidores talvez também seja necessário, a ativação do: extension
 <img src="./assets/habilitando-pdo.png">
 </div>
 
+---
+
 ## Vamos começar!
 
 1. Criando a base de dados denominada “pwiii”:
@@ -79,4 +81,100 @@ CREATE TABLE `pwii`.`produto` (
   - Verificar conexão.
   - Criar sentença SQL.
 
-PÁGINA 12
+7. Criação do arquivo [excluir.php](./atividade-agenda/excluir.php).
+
+- formulário com campos nome, preco e quantidade desabilitados.
+- um botão para confirmar a exclusão.
+- um link para cancelar a exclusão.
+
+8. Criação do arquico [excluirAction.php](./atividade-agenda/excluirAction.php).
+
+- Criar instância MySQLi.
+- Verificar conexão.
+- Criar sentença DELETE.
+- Executar a sentença verificando se mesma obteve sucessso.
+- Gerar mensagems de sucesso e falha com link para o arquivo listar.php.
+
+### Métodos prepare() e bindParam()
+
+O `método prepare()` tem a função apenas de iniciar uma sentença SQL.
+
+Na presença de um caracter de interrogaçao (?), este caracter será substituido pelos valores adicionados, através do uso método bindParam.
+
+O `método bindParam` utiliza passagens de parâmetros. A posição da interrogação será substituída (caso existam mais de uma interrogação, para cada uma delas é dada um número em ordem crescente da direita para esquerda). Um parâmetro $_POST[parametro], por sua ves, se destinará ao valor que será inserido na sentença sql. 
+
+9. Arquivo [atualizar.php](./atividade-agenda/atualizar.php).
+
+- formulário com inputs para o nome, preço e quantidade.
+- receberá os dados oriundos do método get do arquivo “listar.php”.
+- garante a possibilidade do usuário realizar alterações e o update através de botão “atualizar”.
+
+10. Arquivo [atualizarAction.php](./atividade-agenda/atualizarAction.php).
+
+- Criar instância PDO.
+- Verificar conexão.
+- Criar sentença Update.
+- Executar a sentença verificando se mesma obteve sucessso.
+- Gerar mensagems de sucesso e falha com link para o arquivo listar.php.
+
+---
+
+## Você no Comando
+
+"Utilizando o que foi visto até agora, foi criada uma tabela no banco de dados com o nome: estado, com os atributos idestado (auto
+incremento, int11), nome (varchar45) e sigla (varchar2).
+
+A) Obtenha os dados da tabela, utilizando o driver PDO. <br>
+B) Crie uma tabela no navegado utilizando os dados obtidos através da consulta ao banco de dados e exiba no navegador."
+
+1. Criando a tabela estado:
+
+~~~sql
+CREATE TABLE `pwii`.`estado` (
+ `idestado` INT NOT NULL AUTO_INCREMENT,
+ `nome` VARCHAR(45) NOT NULL,
+ `sigla` VARCHAR(2) NOT NULL,
+ PRIMARY KEY (`idestado`));
+~~~
+
+2. Inserindo registros:
+
+~~~sql
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Acre','AC');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Alagoas','AL');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Amapá','AP');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Amazonas','AM');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Bahia','BA');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Ceará','CE');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Espírito Santo','ES');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Goiás','GO');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Maranhão','MA');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Mato Grosso','MT');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Mato Grosso do Sul','MS');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Minas Gerais','MG');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Pará','PA');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Paraíba','PB');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Paraná','PR');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Pernambuco','PE');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Piauí','PI');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Rio de Janeiro','RJ');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Rio Grande do Norte','RN');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Rio Grande do Sul','RS');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Rondônia','RO');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Roraima','RR');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Santa Catarina','SC');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('São Paulo','SP');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Sergipe','SE');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Tocantins','TO');
+INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Distrito Federal','DF');
+~~~
+
+---
+
+## Atividade da Semana
+
+A atividade consiste em um Questionário, que pode ser acessado [aqui](./questionario_agenda07_ds_ii.pdf).
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)

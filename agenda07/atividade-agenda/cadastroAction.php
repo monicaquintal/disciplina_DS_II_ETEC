@@ -16,29 +16,38 @@
         $senha = "senha";
         $bd = "pwiii";
 
-        try{
+        try {
+
             $conecta = new PDO("mysql:dbname=$bd; host=$host; charset=utf8", $usuario, $senha);
             $conecta->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $e){
+
+        } catch (PDOException $e){
+
             echo "falha ao conectar: ". $e->getMessage();
+
         }
        
         $sql = "INSERT INTO produto (nome, preco, quantidade)
+
         VALUES ('".$_POST['txtNome']."', '".$_POST['txtPreco']."', '".$_POST['txtQtd']."')";
      
-        try{
+        try {
+
             $resultado = $conecta->query($sql);
             echo '
             <a href="index.php">
                 <h1 class="w3-button w3-blue w3-round-large">Produto Salvo com sucesso! </h1>
             </a> 
             ';
-        }catch(PDOException $e){
+
+        } catch (PDOException $e) {
+
             echo '
                 <a href="index.php">
                     <h1 class="w3-button w3-blue w3-round-large">ERRO! </h1>
                 </a> 
             ';
+            
         }
     ?>
   </div>
