@@ -169,6 +169,10 @@ INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Tocantins','TO');
 INSERT INTO `pwii`.`estado` (`nome`, `sigla`) VALUES ('Distrito Federal','DF');
 ~~~
 
+3. Codificando para exibição da lista:
+
+O resultado encontra-se no arquivo [voceNoComando.php](./voceNoComando/voceNoComando.php).
+
 ---
 
 ## Atividade da Semana
