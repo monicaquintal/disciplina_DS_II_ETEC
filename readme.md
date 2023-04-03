@@ -16,6 +16,7 @@
 [Agenda 05: Arrays.](./agenda05/agenda05.md)<br>
 [Agenda 06: Persistência de dados (parte 1) - MySQLi.](./agenda06/agenda06.md)<br>
 [Agenda 07: Persistência de dados (parte 2) - PDO.](./agenda07/agenda07.md)<br>
+[Agenda 08: Importação de arquivos, variáveis de sessão, cookies e hospedagem.](./agenda08/agenda08.md)<br>
 <br>
 
 ## Mais PHP:
