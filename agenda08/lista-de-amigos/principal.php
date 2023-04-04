@@ -1,4 +1,13 @@
+<?php require_once ('verificarAcesso.php');?>
 <?php require_once ('cabecalho.php'); ?>
+
+  <div class="w3-padding w3-content w3-text-grey w3-margin w3-display-topleft">
+    <form action="logoutAction.php" class="w3-container" method='post'>
+      <button name="btnLogout" class="w3-button w3-red w3-cell w3-round-large">
+      <i class="w3-xlarge fa fa-user-times">  Logout</i>
+      </button>
+    </form>
+  </div>
 
   <div class="w3-padding w3-text-pink w3-half w3-display-middle w3-center">
     <h1 class="w3-center w3-pink w3-round-large">Projeto Lista de Amigos</h1>

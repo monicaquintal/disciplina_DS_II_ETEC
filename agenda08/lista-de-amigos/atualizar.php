@@ -1,3 +1,4 @@
+<?php require_once ('verificarAcesso.php');?>
 <?php require_once ('cabecalho.php'); ?>
 
   <a href="index.php" class="w3-display-topleft">

@@ -85,16 +85,16 @@ require_once 'conexaoBD.php';
 require_once (conexaoBD.php);
 ~~~
 
-6. Outra boa utilização para include/require, é criar arquivos de cabeçalho e rodapé, e utilizar a importação de
-arquivos, assim quando alterar nester arquivos, todo o site será atualizado.
-- Então, crias dois arquivos:
-  - [cabecalho.php](./lista-de-amigos/cabecalho.php).
+6. Outra boa utilização para include/require, é criar arquivos de cabeçalho e rodapé, e utilizar a importação de arquivos, assim quando alterar nester arquivos, todo o site será atualizado.
+
+Então, criar dois arquivos:
+- [cabecalho.php](./lista-de-amigos/cabecalho.php).
 
 ~~~php
 require_once ('cabecalho.php');
 ~~~
 
-  - [rodape.php](./lista-de-amigos/rodape.php).
+- [rodape.php](./lista-de-amigos/rodape.php).
 
 ~~~php
 require_once ('rodape.php');
@@ -106,4 +106,58 @@ require_once ('rodape.php');
 <h2>SESSION e suas variáveis</h2>
 </div>
 
-PÁGINA 12
+`Variáveis de sessões`: 
+- realizam o armazenamento de informações do usuário para serem utilizadas em várias páginas (como nome de usuário, cor favorita etc.). 
+- contêm informações sobre um único usuário e estão disponíveis para todas as páginas durante seu acesso.
+
+> Para iniciar uma sessão em php, utilizar a `função session_start()`, e as variáveis de sessão serão configuradas com a variável global PHP `$_SESSION`.
+
+### Exemplo:
+
+~~~php
+session_start();
+$_SESSION["Nome"] = "Monica";
+$_SESSION["Idade"] = 31;
+~~~
+
+### Para obter os valores contido nas variáveis em outras páginas, iniciar novamente a sessão, e utilizá-las como o exemplo:
+
+~~~php
+session_start();
+echo "Nome: ".$_SESSION["Nome"]. "e idade: ".$_SESSION["Idade"];
+~~~
+
+## Refatorando o projeto:
+
+### 1. Atualizar o projeto e proteger o acesso via url de usuário não identificado, atualizando o arquivo [loginAction.php](./lista-de-amigos/loginAction.php).
+
+### 2. Criar um arquivo chamado [verificarAcesso.php](./lista-de-amigos/verificarAcesso.php):
+
+- este arquivo sempre vai verificar se há uma sessão aberta e se a variável logado está iniciada. 
+- caso ela não esteja, utilizando a função nativa header, redirecionaremos o acesso para outro arquivo denominado acessoNegado.
+
+### 3. Criar o arquivo “acessoNegado.php”:
+
+- terá apenas uma mensagem de Acesso Negado e um link para a página index, para a realização do login.
+
+### 4. Atualizar todos os arquivos inserindo na primeira linha o seguinte código:
+
+~~~php
+require_once ('verificarAcesso.php');
+~~~
+
+- A linha de código acima fará com que sempre que um usuário tente acessar via url as páginas do nosso projeto, seja verificado o acesso do mesmo. E caso ele não tenha realizado o login, sempre aparecerá a mensagem “Acesso Negado”.
+
+### 5. Criar o arquivo [logoutAction.php](./lista-de-amigos/loginAction.php), para quando o usuário decidir deixar nossa página:
+
+- este arquivo vai basicamente remover a variável de sessão “logado” e redirecionar (função header) para a página incial “index”, o que tornará o
+login novamente necessário!
+- criar um botão de logout no arquivo [principal.php](./lista-de-amigos/principal.php).
+
+---
+
+<div align="center">
+<h2>Cookie</h2>
+</div>
+
+PÁGINA 17
