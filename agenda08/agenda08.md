@@ -136,7 +136,7 @@ echo "Nome: ".$_SESSION["Nome"]. "e idade: ".$_SESSION["Idade"];
 - este arquivo sempre vai verificar se há uma sessão aberta e se a variável logado está iniciada. 
 - caso ela não esteja, utilizando a função nativa header, redirecionaremos o acesso para outro arquivo denominado acessoNegado.
 
-### 3. Criar o arquivo “acessoNegado.php”:
+### 3. Criar o arquivo [acessoNegado.php](./lista-de-amigos/acessoNegado.php):
 
 - terá apenas uma mensagem de Acesso Negado e um link para a página index, para a realização do login.
 
@@ -160,4 +160,118 @@ login novamente necessário!
 <h2>Cookie</h2>
 </div>
 
-PÁGINA 17
+- são dados ou grupo de dados que o browser (navegador) e o servidor Apache trocam dados e informações entre si, enquanto o usuário utiliza as páginas do seu site. Estes dados são salvos em arquivo de texto direto no computador do usuário.
+- para criar e manipular um cookie, deve-se utilizar a função `setcookie()`, sendo:
+  - primeiro parâmento: um nome para o cookie.
+  - segundo parâmetro: valor do cookie.
+- exemplo:
+
+~~~php
+setcookie('usuario', 'monica');
+~~~
+
+- há um terceiro parâmetro utilizado para determinar um tempo de “vida” para esse cookie:
+
+~~~php
+// Criando um cookie para durar um dia
+setcookie('usuario', 'monica', (time() + (24 * 3600)));
+~~~
+
+---
+
+<div align="center">
+<h2>Hospedagem, Registro de Domínios e mais!</h2>
+</div>
+
+1. `Domínio`:
+- é um simplificador.
+- são "nomes" que conseguem identificar máquinas por seus IPs!
+- é um endereço único para um site, que serve para localizar e identificar conjuntos de computadores na internet.
+
+2. `Hospedagem`:
+- oferecem espaços em disco, espaço para contas de e-mail, espaço para armazenamento de banco de dados.
+- ou seja, após reservar o domínio, deve-se contratar um plano de hospedagem para seu domínio.
+
+---
+
+<div align="center">
+<h2>Você no Comando</h2>
+</div>
+
+## Enunciado:
+
+"Utilizando o que foi visto até agora, foi disponibilizado uma página com o nome, disciplina e dados de vários professores. Nossa missão é restringir o acesso a a essa página, através de identificação. Esta identificação deve ser validada através da tabela (professor) criada no
+banco de dados com os atributos: idprofessor, nome, disciplina e senha.
+
+1. Obtenha os dados da tabela, utilizando o driver PDO ou Mysqli
+2. Crie uma Página para um formulário para login e senha
+3. Utilize Session para impedir o acesso via URL da página principal
+4. Crie um botão para realizar logout na página em que os professores estão listados
+5. Crie arquivos para auxilar no desenvolvimento
+
+Dicas:
+
+- Utilize os conceitos e exemplos de estrutura de repetição da Agenda 5.
+- De preferência ao uso da estrutura de repetição Foreach.
+- Agenda 6 ou 7 para acesso ao banco de dados.
+- Os conceitos de importação podem te ajudar a economizar tempo."
+
+## 1. Criando banco de dados:
+
+~~~sql
+CREATE TABLE `pwii`.`professor` (
+  `idprofessor` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `disciplina` VARCHAR(45) NOT NULL,
+  `senha` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idprofessor`)
+);
+~~~
+
+~~~sql
+INSERT INTO `pwii`.`professor` (`nome`, `disciplina`, `senha`) VALUES ('Paulo', 'Programação WEB II', 'paulo123');
+INSERT INTO `pwii`.`professor` (`nome`, `disciplina`, `senha`) VALUES ('Guilherme', 'Programação Mobile', 'guilherme123');
+INSERT INTO `pwii`.`professor` (`nome`, `disciplina`, `senha`) VALUES ('Eliana', 'Lógica de Programação', 'eliana123');
+~~~
+
+### 2. Criar os arquivos:
+
+- [index.php](./voceNoComando/index.php):
+  - contém o formulário para login e action direcionando para o arquivo “LoginAction”.
+- [loginAction.php](./voceNoComando/loginAction.php):
+  - contém a consulta no banco para verificação se há o professor ou não, em caso verdareiro exibirá mensagem de login realizado, com link para página de professores, em caso negativo uma mensagem de falhar com link para a página index.
+- [professor.php](./voceNoComando/professor.php).
+- [logoutAction.php](./voceNoComando/logoutAction.php):
+  - contém a codificação para o logout do usuário conectado e o redirecionando para a página index.
+- [conexaoBD.php](./voceNoComando/conexaoBD.php):
+  - criado para concentrar os dados e conexão em um único arquivo.
+- [acessoNegado](./voceNoComando/acessoNegado.php):
+  - utilizado para quando o usuário tentar realizar o acesso a página sem login.
+
+---
+
+<div align="center">
+<h2>Fichário</h2>
+</div>
+
+## Enunciado:
+
+"Gabi toda orgulhosa, mostrou para sua professora de Programação WEB II o seu projeto finalizado, a professora Alice, ficou encantada com o resultado e pediu para Gabi, criar uma apresentação de seu projeto.  Gabi, ficou um pouco ansiosa, mas topou o desafio. Ela começou a pensar em uma apresentação sobre todo o funcionamento do seu projeto e como seria a melhor maneira para apresentá-lo. Lembrando que essa apresentação seria feita para os professores das outras disciplinas, portanto, ela deve se preocupar também em apresentar informações técnicas do projeto.
+
+Para estudar mais sobre o assunto e deixar seu conhecimento bem afiado, ajude a Gabi a desenvolver essa apresentação. Para isso, será necessário abordar o projeto desenvolvido nos exemplos práticos.
+
+Capriche nessa apresentação, mostrando as habilidades adquiridas. Vamos lá?
+
+Dicas:
+
+- Você pode criar uma apresentação no powerpoint, mostrando o passo a passo
+- Para os exemplos práticos você pode criar vídeos explicando todo o funcionamento;
+- Use sua imaginação e nos surpreenda!"
+
+## Resposta: 
+
+... loading ... 
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)

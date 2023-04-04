@@ -1,7 +1,7 @@
 <?php require_once ('verificarAcesso.php');?>
 <?php require_once ('cabecalho.php'); ?>
 
-  <a href="index.php" class="w3-display-topleft">
+  <a href="./principal.php" class="w3-display-topleft">
   <i class="fa fa-arrow-circle-left w3-xlarge w3-deep-purple w3-button w3-round-large w3-margin-left w3-margin-top"> Voltar</i>
   </a>
 

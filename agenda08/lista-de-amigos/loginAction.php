@@ -23,7 +23,7 @@
         echo '
           <div>
           <a href="principal.php">
-          <h1 class="w3-button w3-pink">'.$nome.', seja bem-vindo(a)! </h1>
+          <h1 class="w3-button w3-pink w3-round-large">'.$nome.', seja bem-vindo(a)! </h1>
           </a>
           '; 
 
