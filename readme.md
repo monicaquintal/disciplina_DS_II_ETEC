@@ -4,9 +4,8 @@
 <p>Repositório para atividades estudadas e desenvolvidas ao longo do semestre.</p>
 </div>
 
-<a href="https://github.com/monicaquintal" target="_blank"><img align="left" height="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"/></a>  
-<h2>Seção 1</h2>
-<h2>Estudando PHP 🐘</h2>
+<a href="https://github.com/monicaquintal" target="_blank"><img align="left" height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"/></a>  
+<h2>Seção 1: Estudando PHP 🐘</h2>
 
 <div id="conteudo" align="justify">
 
@@ -31,9 +30,8 @@
 
 ---
 
-<a href="https://github.com/monicaquintal" target="_blank"><img align="left" height="70" src="https://www.svgrepo.com/show/477093/mobile-phone-signal.svg"/></a>  
-<h2>Seção 2</h2>
-<h2>Estudando Kodular 🤳</h2>
+<a href="https://github.com/monicaquintal" target="_blank"><img align="left" height="60" src="https://www.svgrepo.com/show/477093/mobile-phone-signal.svg"/></a>  
+<h2>Seção 2: Estudando Kodular 🤳</h2>
 
 <div id="conteudo" align="justify">
 
