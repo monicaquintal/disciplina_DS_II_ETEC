@@ -27,4 +27,11 @@
 - permite a transformação das nossas ideias em aplicativos para o sistema operacional Android, através da programação em blocos.
 - não há necessidade de conhecimento de linguagem de programação específica, apenas lógica de programação, para definir a junção dos blocos no desenvolvimento do código do aplicativo.
 
-10
+### Criando o primeiro projeto: [Aula01](./projects/Aula01.aia), a partir [deste vídeo](https://www.youtube.com/watch?v=lsGEwJ6y4aI), e exportando [apk](./projects/Aula01.apk).
+
+### Importante
+
+- ao nomear o projeto, o nome não poderá ser alterado.
+
+## Desenvolvendo o projeto [Calculadpra](./projects/Calculadora.aia) de soma entre dois valores, a partir [deste vídeo](https://www.youtube.com/watch?v=gsgvYulPMv4).
+
