@@ -26,12 +26,20 @@
 - oferta um ambiente com grande facilidade de manuseio e gratuidade.
 - permite a transformação das nossas ideias em aplicativos para o sistema operacional Android, através da programação em blocos.
 - não há necessidade de conhecimento de linguagem de programação específica, apenas lógica de programação, para definir a junção dos blocos no desenvolvimento do código do aplicativo.
-
-### Criando o primeiro projeto: [Aula01](./projects/Aula01.aia), a partir [deste vídeo](https://www.youtube.com/watch?v=lsGEwJ6y4aI), e exportando [apk](./projects/Aula01.apk).
-
-### Importante
-
 - ao nomear o projeto, o nome não poderá ser alterado.
 
-## Desenvolvendo o projeto [Calculadpra](./projects/Calculadora.aia) de soma entre dois valores, a partir [deste vídeo](https://www.youtube.com/watch?v=gsgvYulPMv4).
+1. Criando o primeiro projeto: [Aula01](./projects/Aula01.aia), a partir [deste vídeo](https://www.youtube.com/watch?v=lsGEwJ6y4aI), e exportando [apk](./projects/Aula01.apk).
 
+2. Desenvolvendo o projeto Calculadora, o qual foi aprimorado para entrega da atividade (abaixo).
+
+---
+
+## Fichário
+
+" Vamos continuar o projeto Calculadora...<br>|
+
+Dando continuidade ao projeto Calculadora apresentado no material Mergulhando no Tema, desenvolva as demais operações matemáticas (subtração, multiplicação e divisão). Para isso, vamos ter que alterar o Layout da aplicação, inserindo um botão para cada operação matemática. <br>|
+
+Após a conclusão da tarefa, adicione em uma pasta os arquivos apk e aia, e um PDF contendo os prints do projeto sendo executado. Compacte a pasta para envio."<br>
+
+> A atividade entregue encontra-se no repositório agenda09 > projects > [Calculadora](./projects/Calculadora.apk).
