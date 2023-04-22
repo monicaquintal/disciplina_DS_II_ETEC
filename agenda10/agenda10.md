@@ -52,3 +52,8 @@ O aplicativo deve ser desenvolvido utilizando o o layout vertical, adicionar na 
 
 Utilize os recursos de cores e fontes de texto para praticar o conhecimento adquirido nesta agenda. Salve o seu aplicativo (arquivo .aia e apk) e envie junto com prints do funcionamento para o seu professor-tutor."<br></em>
 
+> A atividade entregue encontra-se no repositório agenda10 > projects > Propaganda.
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
