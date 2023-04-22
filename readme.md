@@ -39,4 +39,5 @@
 
 [Agenda 09: Utilizando Kodular para desenvolvimento mobile.](./agenda09/agenda09.md)<br>
 [Agenda 10: Layout e estrutura do projeto no Kodular.](./agenda10/agenda10.md)<br>
+[Agenda 11: Layout do projeto, tela de splash, imagens e cores.](./agenda11/agenda11.md)<br>
 <br>
