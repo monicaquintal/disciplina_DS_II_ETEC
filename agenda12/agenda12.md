@@ -5,8 +5,7 @@
 </div>
 
 <div id="agenda06" align="center">
-<h2>Agenda 12: Trabalhando com Layout no Projeto.<br>
-</h2>
+<h2>Agenda 12: Trabalhando com Layout no Projeto.</h2>
 </div>
 
 ### Objetivos:
