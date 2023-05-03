@@ -22,25 +22,25 @@
 ### Questionário:
 
 1. No componente Space, assinale a alternativa que corresponde ao conceito correto sobre a propriedade Height.<br>
-[x] Definir a altura do componente.
+- [x] Definir a altura do componente.
 
 2. No componente Screen, assinale a alternativa que corresponde ao conceito correto sobre a propriedade Title.<br>
-[x] Definir o título da aplicação em desenvolvimento.
+- [x] Definir o título da aplicação em desenvolvimento.
 
 3. No componente TextBox, assinale a alternativa que corresponde ao conceito correto sobre a propriedade Name.<br>
-[x] Definir o nome do componente.
+- [x] Definir o nome do componente.
 
 4. Qual bloco é responsável por concatenar Strings na programação?<br>
-[x] join
+- [x] join
 
 5. Quando definimos um objeto TextBox com o atributo Width como Fill Parent:<br>
-[x] A largura do objeto fica com a largura disponível da tela.
+- [x] A largura do objeto fica com a largura disponível da tela.
 
 6. Qual bloco utilizamos para fechar o aplicativo?<br>
-[x] close application.
+- [x] close application.
 
 7. Em um TextBox, qual atributo é utilizado para definir uma “dica” para o usuário preencher o campo?<br>
-[x] hint.
+- [x] hint.
 
 --- 
 
