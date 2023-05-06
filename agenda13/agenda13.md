@@ -21,10 +21,11 @@
 
 ## Aprimorando o projeto:
 
-<video width="320" height="240" controls>
-  <source src="projects/Agenda13_monicaQuintal.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<div align="center">
+
+https://user-images.githubusercontent.com/111545468/236641380-153778c4-582f-4b8c-a1d4-e1fe456e90fa.mp4
+
+</div>
 
 > O projeto desenvolvido pode ser visualizado em agenda13 > projects.
 
