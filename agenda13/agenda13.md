@@ -18,3 +18,18 @@
 
 1. [Vídeo tutorial para desenvolvimento do app estudado.](https://www.youtube.com/watch?v=0Hvzz694dmI)
 2. [Criando a programação botão Começar.](https://www.youtube.com/watch?v=jSWXxwjJ_uo)
+
+## Aprimorando o projeto:
+
+<div align="center">
+<video width="320" height="240" controls>
+  <source src="./projects/Agenda13_monicaQuintal.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div>
+
+> O projeto desenvolvido pode ser visualizado em agenda13 > projects.
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
