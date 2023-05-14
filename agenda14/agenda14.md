@@ -55,3 +55,26 @@
 - [Procedimentos trocaJogador e marca_posicao](https://www.youtube.com/watch?v=wdYw1HgOUZA).
 - [Procedimento verifica_velha](https://www.youtube.com/watch?v=DifjY5Wa8pM).
 
+--- 
+
+## Fichário
+
+<em>
+"Após codificar todo o projeto, execute alterações em seu design, como alteração de cores, inserção de tela de Splash entre outros recursos de sua escolha. Na sequência capture imagens (fotos) do programa executando e envie para seu professor, envie também o código da linguagem de blocos utilizado para desenvolvimento do projeto “Jogodavelha”."
+</em>
+
+### Atividade:
+
+<div align="center">
+
+
+
+</div>
+
+> O projeto desenvolvido pode ser visualizado em agenda14 > projects.
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
+
+
