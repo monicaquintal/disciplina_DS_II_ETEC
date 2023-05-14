@@ -23,3 +23,35 @@
 
 ### 2. procedimento “marca_posicao”:
 
+- utilizado argumento btn, que determina qual o botão que o usuário clicou.
+
+## Variável
+
+- é um local para armazenamento temporário na memória do dispositivo indicado por um nome previamente escolhido no momento da sua declaração. 
+  - a função principal da variável é armazenar valores temporários que serão utilizados nas rotinas do aplicativo.
+  - esses valores podem sofrer alterações durante a execução do aplicativo.
+  - armazena apenas um valor para cada alocação.
+- no Kodular não é necessário definir um tipo para a variável.
+
+## Vetor
+
+- permite trabalhar com vários valores de um mesmo tipo relacionados.
+- é indicado por um nome e um índice de acordo com a quantidade de divisões definidas no ato do seu desenvolvimento.
+- otamanho do vetor é definido de acordo com a necessidade da programação.
+- o índice de um vetor sempre inicia no “0”.
+
+## Estrutura de decisão
+
+- utilizada para que uma parte do código seja executada apenas se uma determinada condição “booleana” estiver sendo atendida. 
+- caso contrário, é possível determinar que o aplicativo execute uma outra parte do código.
+
+## Estrutura de repetição
+
+- utilizada para que uma parte do código seja executada e repetida durante uma determinada condição. 
+- muito utilizada na programação e uma das principais funções é gerar uma economia de código em certas rotinas.
+
+## Tutoriais da aula
+
+- [Procedimentos trocaJogador e marca_posicao](https://www.youtube.com/watch?v=wdYw1HgOUZA).
+- [Procedimento verifica_velha](https://www.youtube.com/watch?v=DifjY5Wa8pM).
+
