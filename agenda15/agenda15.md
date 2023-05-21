@@ -27,8 +27,15 @@ O projeto desenvolvido encontra-se no diretório agenda15 > projects > Notificac
 <br>
 Crie um projeto com uma tela para Cadastro de Produtos, a tela deve solicitar os dados básicos de um produto de sua escolha (codigo, nome, valor...). Utilize o componente Notifier para solicitar que o usuário preencha corretamente os campos caso os deixe vazios."
 </em>
+<br>
 
 > O projeto desenvolvido encontra-se no diretório agenda15 > projects > TeladeCadastro (.aia e .apk).
+<br>
+<div align="center">
+
+https://github.com/monicaquintal/disciplina_DS_II_ETEC/assets/111545468/9b72fc05-6f59-4a11-bfd4-5ba38eddceea
+
+</div>
 
 --- 
 
