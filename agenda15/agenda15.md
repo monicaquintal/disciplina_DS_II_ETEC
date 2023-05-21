@@ -18,7 +18,7 @@ do desenvolvedor e da versão do sistema operacional Android.
 ## Aplicando:
 
 [Vídeo tutorial aqui](https://www.youtube.com/watch?v=2dTaRqC9vv0).<br>
-O projeto desenvolvido encontra-se no diretório agenda15 > projects.
+O projeto desenvolvido encontra-se no diretório agenda15 > projects > Notificacao (.aia e .apk).
 
 ## Fichário:
 
@@ -28,3 +28,8 @@ O projeto desenvolvido encontra-se no diretório agenda15 > projects.
 Crie um projeto com uma tela para Cadastro de Produtos, a tela deve solicitar os dados básicos de um produto de sua escolha (codigo, nome, valor...). Utilize o componente Notifier para solicitar que o usuário preencha corretamente os campos caso os deixe vazios."
 </em>
 
+> O projeto desenvolvido encontra-se no diretório agenda15 > projects > TeladeCadastro (.aia e .apk).
+
+--- 
+
+[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
