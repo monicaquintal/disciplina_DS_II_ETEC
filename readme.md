@@ -43,6 +43,7 @@
 [Agenda 12: Trabalhando com Layout no Projeto.](./agenda12/agenda12.md)<br>
 [Agenda 13: Trabalhando com Desenvolvimento de Jogos.](./agenda13/agenda13.md)<br>
 [Agenda 14: Técnicas de programação no Kodular.](./agenda14/agenda14.md)<br>
-[Agenda 15: Notificações.](./agenda15/agenda15.md)
+[Agenda 15: Notificações.](./agenda15/agenda15.md)<br>
+[Agenda 16: Personalizando os botões.](./agenda16/agenda16.md)
 </div>
 
