@@ -8,11 +8,19 @@
 <h2>Agenda 16: Personalizando os botões.</h2>
 </div>
 
-[Vídeo tutorial dos exemplos trabalhados na agenda.](https://www.youtube.com/watch?v=XhX5xZoRJsA).<br>
+[Vídeo tutorial dos exemplos trabalhados na agenda.](https://www.youtube.com/watch?v=XhX5xZoRJsA)<br>
 > O projeto desenvolvido encontra-se no diretório agenda16 > projects > introducao-botoes.
 
-[Você no Comando: Jogo Descubra o Número.](https://www.youtube.com/watch?v=IIZ3MWCa7B8).<br>
+[Você no Comando: Jogo Descubra o Número.](https://www.youtube.com/watch?v=IIZ3MWCa7B8)<br>
 > O projeto desenvolvido encontra-se no diretório agenda16 > projects > jogo-adivinha-numero.
+
+---
+
+<div align="center">
+
+https://github.com/monicaquintal/disciplina_DS_II_ETEC/assets/111545468/f2430226-c45e-48d4-afe2-f713e234307e
+
+</div>
 
 --- 
 
