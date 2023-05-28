@@ -24,4 +24,4 @@ https://github.com/monicaquintal/disciplina_DS_II_ETEC/assets/111545468/f2430226
 
 --- 
 
-[Voltar ao início.](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
+[Voltar ao início!](https://github.com/monicaquintal/disciplina_DS_II_ETEC)
